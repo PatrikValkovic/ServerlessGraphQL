@@ -1,0 +1,14 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "include": ["**/*.ts"],
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "outDir": "../../dist/out-tsc",
+        "declaration": true,
+        "types": ["jest","node"],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true
+    }
+}

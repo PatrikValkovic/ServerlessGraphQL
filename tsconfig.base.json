@@ -1,0 +1,30 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "lib": ["es2017", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "paths": {
+            "@agora/be-business-logic": ["libs/be-business-logic/src/index.ts"],
+            "@agora/be-data": ["libs/be-data/src/index.ts"],
+            "@agora/be-graphql": ["libs/be-graphql/src/index.ts"],
+            "@agora/fe-graphql": ["libs/fe-graphql/src/index.ts"],
+            "@agora/helpers": ["libs/helpers/src/index.ts"]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
+}

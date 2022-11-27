@@ -1,0 +1,32 @@
+{
+    "extends": [
+        "plugin:@nrwl/nx/react",
+        "../../.eslintrc.js"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "*.ts",
+                "*.tsx",
+                "*.js",
+                "*.jsx"
+            ],
+            "rules": {
+                "consistent-return": "off",
+                "@typescript-eslint/no-unused-vars": [
+                    "error",
+                    {
+                        "varsIgnorePattern": "React|^_",
+                        "argsIgnorePattern": "^_"
+                    }
+                ],
+                "dot-notation": [
+                    "error",
+                    {
+                        "allowPattern": "^NX_[_a-zA-Z]+$"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/helpers/src",
+    "projectType": "library",
+    "targets": {
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["libs/helpers/**/*.ts"]
+            }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["{workspaceRoot}/coverage/libs/helpers"],
+            "options": {
+                "jestConfig": "libs/helpers/jest.config.ts",
+                "passWithNoTests": true
+            }
+        },
+        "type-check": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "npx tsc --p libs/helpers/tsconfig.json --noEmit"
+            }
+        }
+    },
+    "tags": [],
+    "name": "helpers"
+}

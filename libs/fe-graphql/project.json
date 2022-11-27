@@ -1,0 +1,37 @@
+{
+    "name": "fe-graphql",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/fe-graphql/src",
+    "projectType": "library",
+    "tags": [],
+    "targets": {
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["libs/fe-graphql/**/*.{ts,tsx,js,jsx}"]
+            }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+            "options": {
+                "jestConfig": "libs/fe-graphql/jest.config.ts",
+                "passWithNoTests": true
+            }
+        },
+        "type-check": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "npx tsc --p libs/fe-graphql/tsconfig.json --noEmit"
+            }
+        },
+        "generate": {
+            "executor": "nx:run-commands",
+            "dependsOn": ["^generate"],
+            "options": {
+                "command": "npx graphql-code-generator --config ./libs/fe-graphql/codegen.ts"
+            }
+        }
+    }
+}

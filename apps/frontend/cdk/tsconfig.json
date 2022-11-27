@@ -1,0 +1,12 @@
+{
+    "extends": "../../../tsconfig.base.json",
+    "include": ["**/*.ts"],
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "ES6",
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "skipLibCheck": true,
+    }
+}
