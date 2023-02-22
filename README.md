@@ -1,9 +1,9 @@
 # Serverless GraphQL subscriptions
 
-This project was created as demonstration for [Qeetup]().  
-You can find the presentation at [slides.com]().
+This project was created as demonstration for [Qeetup](https://qeetup.qest.cz/).  
+You can find the presentation at [slides.com](https://slides.com/d/YvSS2ZY/live).
 
-If you are interested in similar topics, see our [web]().
+If you are interested in similar topics, see our [web](https://qeetup.qest.cz/).
 
 ## Up and running
 
