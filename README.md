@@ -1,10 +1,12 @@
 # Serverless GraphQL subscriptions
 
 This project was created as demonstration for [Qeetup](https://qeetup.qest.cz/).  
-You can find the presentation at [slides.com](https://slides.com/patrikvalkovic/deck-9eb3a9).  
-Presentation recording at [youtube.com](https://youtu.be/R5-15ueGTnk).
+You can find the presentation at [slides.com \[CZ\]](https://slides.com/patrikvalkovic/deck-9eb3a9).  
+Presentation recording at [youtube.com \[CZ\]](https://youtu.be/R5-15ueGTnk).
 
 If you are interested in similar topics, see our [web](https://qeetup.qest.cz/).
+
+Live example: [http://serverless-graphql-subscriptions-meetup.s3-website.ca-central-1.amazonaws.com/](http://serverless-graphql-subscriptions-meetup.s3-website.ca-central-1.amazonaws.com/)
 
 ## Up and running
 

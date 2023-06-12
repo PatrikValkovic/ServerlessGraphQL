@@ -14,11 +14,17 @@ export class FrontendStack extends Stack {
         super(scope, id, props);
 
         this.bucket = new Bucket(this, 'fe-bucket', {
-            bucketName: 'serverless-graphql-subscriptions-qeetup',
+            bucketName: 'serverless-graphql-subscriptions-meetup',
             websiteIndexDocument: 'index.html',
             publicReadAccess: true,
             autoDeleteObjects: true,
             removalPolicy: RemovalPolicy.DESTROY,
+            blockPublicAccess: {
+                blockPublicAcls: false,
+                blockPublicPolicy: false,
+                restrictPublicBuckets: false,
+                ignorePublicAcls: false,
+            },
             cors: [{
                 allowedHeaders: Cors.DEFAULT_HEADERS,
                 allowedMethods: [HttpMethods.GET],
